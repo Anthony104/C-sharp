@@ -19,24 +19,22 @@ namespace SelectionStatements
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Anthony")
+            if (comboBox1.Text != "Anthony")
             {
-                MessageBox.Show("you picked Anthony");
-            }
-            else if (comboBox1.Text == "Tony")
+                if (comboBox1.Text == "Tony")
+                {
+                  MessageBox.Show("you picked Tony");
+                }
+            else 
             {
-                MessageBox.Show("you picked Tony");
-            }
-
-            else if (comboBox1.Text == "Anto")
-            {
-                MessageBox.Show("you picked Anto");
-            }
-
-            else
-            {
-                MessageBox.Show("ERROR!!!!");
+                MessageBox.Show("im not sure who you picked.");
             }
         }
-    }
-}
+            else
+             {
+                MessageBox.Show("Anthony");
+             }
+        }
+
+    
+
