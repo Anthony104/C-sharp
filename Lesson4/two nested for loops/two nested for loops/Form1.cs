@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ForLoop
+namespace two_nested_for_loops
 {
     public partial class Form1 : Form
     {
@@ -17,23 +17,25 @@ namespace ForLoop
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        
-            {
-                string[] myArray = { "Anthony", "AC", "Tony", "AC104" };
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
 
-                //for (int i = 0; i < myArray.Length; i++ )
-                //{
-                //    MessageBox.Show(i.ToString());
-                //}
-                
-                if (myArray[1] == "AC")
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] myArray = { "Anthony", "AC", "Tony", "AC104" };
+
+            for (int i = 0; i < myArray.Length; )
+            {
+                foreach (var nickname in myArray)
                 {
-                 MessageBox.Show("FOUND AC!!");
+                    MessageBox.Show(i++ + " " + nickname);
                 }
 
 
             }
-        
-    }
+        }
 }
+}
+

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ForLoop
+namespace whileLoop
 {
     public partial class Form1 : Form
     {
@@ -17,23 +17,18 @@ namespace ForLoop
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
         
-            {
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
                 string[] myArray = { "Anthony", "AC", "Tony", "AC104" };
 
-                //for (int i = 0; i < myArray.Length; i++ )
-                //{
-                //    MessageBox.Show(i.ToString());
-                //}
-                
-                if (myArray[1] == "AC")
+                int i = 0; 
+                while ( i < int.Parse(TextBox1.Text))
                 {
-                 MessageBox.Show("FOUND AC!!");
+                    i++;
                 }
-
-
-            }
-        
+            MessageBox.Show("The final value was: " + i.ToString());
+        }
     }
 }
