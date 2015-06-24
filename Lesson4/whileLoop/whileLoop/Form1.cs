@@ -19,16 +19,24 @@ namespace whileLoop
 
         
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
-                string[] myArray = { "Anthony", "AC", "Tony", "AC104" };
-
-                int i = 0; 
-                while ( i < int.Parse(TextBox1.Text))
-                {
-                    i++;
-                }
+               int i = 0;
+            while (i < int.Parse(TextBox2.Text))
+            {
+                i++;
+            }
             MessageBox.Show("The final value was: " + i.ToString());
+            }
+
+        
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+
+            
     }
 }
+

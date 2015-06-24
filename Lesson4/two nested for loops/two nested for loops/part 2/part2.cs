@@ -28,9 +28,9 @@ namespace two_nested_for_loops
 
             for (int i = 0; i < myArray.Length; )
             {
-                foreach (var nickname in myArray)
+                for(var nickname in myArray)
                 {
-                    MessageBox.Show(i++ + " " + nickname);
+                    MessageBox.Show(i++ + " " + nickname++);
                 }
 
             }
